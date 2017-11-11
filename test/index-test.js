@@ -1,8 +1,9 @@
 var a, b
 
-beforeEach(function() {
-  a = Math.floor(Math.random() * 1000)
-  b = Math.floor(Math.random() * 1000)
+beforeEach(function add(a,b) {
+  a = Math.floor(Math.random() * 1000);
+  b = Math.floor(Math.random() * 1000);
+  return a + b;
 })
 
 it('add(a, b) adds two numbers and returns the result', function() {
